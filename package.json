@@ -1,0 +1,14 @@
+{
+  "name": "responisve-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive web portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Adam Dzierzko",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
