@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background: #fff;
+    background: setTextColor($primary-color);
     @include easeOut
   }
 
