@@ -26,7 +26,6 @@ h1, h2, h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -70,50 +69,68 @@ main {
   }
 }
 
-.about-info{
+//About page
+.about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-  'bioimage bio bio'
-  'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-img{  //TODO: Get the pic!!
+  .bio-img {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
 
-  .bio{
+  .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
 
-  .job-1{
+  .job-1 {
     grid-area: job1;
   }
 
-  .job-2{
+  .job-2 {
     grid-area: job2;
   }
 
-  .job-3{
+  .job-3 {
     grid-area: job3;
   }
 
-  .job{
+  .job {
     background: lighten($primary-color, 3);
     padding: 0.5rem;
   }
 }
 
-#main-footer{
+//Projects page
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.3rem;
+
+  img {
+    width: 100%;
+    border: white 3px solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut
+    }
+  }
+}
+
+
+#main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   height: 60px;
 }
-
 
 @import "mobile";
